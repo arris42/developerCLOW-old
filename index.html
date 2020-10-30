@@ -177,6 +177,27 @@
 			</div>
 		</section>
 
+		<!-- ======= Animation with Javascript ========-->
+		<script>
+			const wadah = document.getElementById('wadah');
+			const logo = document.getElementById('CLOW');
+			const gambar = document.getElementById('wadah');
+
+			logo.addEventListener('click', function () {
+				logo.style.transition = "5s";
+				logo.style.transform = "rotate(10800deg)";
+				logo.style.opacity = "0";
+				gambar.style.transition = '4s';
+				gambar.style.opacity = "0";
+
+				setTimeout(function () {
+					gambar.innerHTML = '<div><audio src="audio/Role Reveal Among Us Sound Effect.mp3" autoplay="autoplay"></audio><img src="images/CLOW Baru.png" style="transform: translate(0%,-10%)" alt="anjim"></div>';
+					gambar.style.opacity = '1';
+				}, 7000);
+			});
+		</script>
+		<!-- ======= End Animation with Javascript ========-->
+
 		<!-- =========== Service Area Start ============ -->
 		<section class="v2_service service_2 pt__90 pb__100 pt__sm__70 pb__sm__40 bg__gray" id="services">
 			<div class="container">
