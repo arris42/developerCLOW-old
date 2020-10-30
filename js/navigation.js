@@ -1,4 +1,4 @@
-;(function ( $, window, document, undefined ){
+(function ( $, window, document, undefined ){
  
     $.navigation = function(element, options){
  
